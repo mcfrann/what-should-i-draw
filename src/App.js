@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import { useState } from 'react'
+import apiCalls from './apiCalls'
 
 function App() {
+  const [adjective, setAdjective] = useState('')
+  const [noun, setNoun] = useState('')
+
+  const fetchData = () => {
+    apiCalls.fetchAdjective().then((res) => setAdjective(res))
+    apiCalls.fetchNoun().then((res) => setNoun(res))
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className='App'>
+      <div className='wrapper'>
+        <span className='title'>
+          <h1>YOU</h1>
+          <h1>SHOULD</h1>
+          <h1>DRAW A:</h1>
+        </span>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          {adjective} {noun}
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      </div>
+      <button onClick={fetchData}>generate</button>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
