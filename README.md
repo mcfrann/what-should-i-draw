@@ -10,7 +10,7 @@ Are you an artist in a rut or lacking inspiration? Just looking for ideas to get
 
 #### Deployed link:
 
-What Should I Draw? is deployed via Heroku and can be visited [here](deploymentlink.com).
+Coming soon :)
 
 #### Technologies and Tools
 
