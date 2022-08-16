@@ -9,8 +9,7 @@ Are you an artist in a rut or lacking inspiration? Just looking for ideas to get
 [Francesca McConnell](https://github.com/mcfrann) (me), an artist who has been known to suffer from drawer's block.
 
 #### Deployed link:
-
-Coming soon :)
+Deployed via Heroku. Visit [here](https://what-should-i-draw.herokuapp.com/).
 
 #### Technologies and Tools
 
