@@ -47,6 +47,11 @@ button {
   cursor: pointer;
 }
 
+button:hover {
+  transform: scale(1.1);
+  transition: 500ms;
+}
+
 /*-------------------------------- breakpoints------------------------*/
 
 @media only screen and (max-width: 900px) {
